@@ -9,12 +9,12 @@ public class Client {
 
         System.out.println("----------NORMAL VEHICLE----------");
         Vehicle normalVehicle = new NormalVehicle(normalDrive);
-        normalVehicle.drive();
+        normalVehicle.driveVehicle();
         System.out.println("----------SPORTS VEHICLE----------");
         Vehicle sportsVehicle = new SportsVehicle(sportDrive);
-        sportsVehicle.drive();
+        sportsVehicle.driveVehicle();
         System.out.println("----------OFFROAD VEHICLE----------");
         Vehicle offRoadVehicle = new OffRoadVehicle(offRoadDrive);
-        offRoadVehicle.drive();
+        offRoadVehicle.driveVehicle();
     }
 }

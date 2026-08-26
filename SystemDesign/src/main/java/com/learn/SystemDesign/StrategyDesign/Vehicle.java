@@ -11,7 +11,7 @@ public class Vehicle {
         this.drivestrategy = drivestrategy;
     }
 
-    public void drive(){
+    public void driveVehicle(){
         drivestrategy.drive();
     }
 }
