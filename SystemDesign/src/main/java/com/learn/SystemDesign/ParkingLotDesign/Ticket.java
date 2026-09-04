@@ -1,0 +1,40 @@
+package com.learn.SystemDesign.ParkingLotDesign;
+
+import com.learn.SystemDesign.ParkingLotDesign.entity.ParkingSpot;
+import com.learn.SystemDesign.ParkingLotDesign.entity.Vehicle;
+import com.learn.SystemDesign.ParkingLotDesign.parkingLot.ParkingLevel;
+
+import java.time.LocalDateTime;
+
+public class Ticket {
+
+    private final Vehicle vehicle;
+    private final ParkingLevel level;
+    private final ParkingSpot spot;
+    private final LocalDateTime entryTime;
+
+    public Ticket(Vehicle vehicle,
+                  ParkingLevel level,
+                  ParkingSpot spot) {
+        this.vehicle = vehicle;
+        this.level = level;
+        this.spot = spot;
+        this.entryTime = LocalDateTime.now();
+    }
+
+    public Vehicle getVehicle() {
+        return vehicle;
+    }
+
+    public ParkingLevel getLevel() {
+        return level;
+    }
+
+    public ParkingSpot getSpot() {
+        return spot;
+    }
+
+    public LocalDateTime getEntryTime() {
+        return entryTime;
+    }
+}
